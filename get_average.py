@@ -20,14 +20,14 @@ students = {}
 
 for record in sel:
 	if record[0] in students:
-		students[record[0]][0] += int(record[2]);
+		students[record[0]][0] += int(record[2])
 		students[record[0]][1] += 1;
 	else:
-		students[record[0]] = [record[2], 1, record[1]];
+		students[record[0]] = [record[2], 1, record[1]]
 
 for i in students:
 	average = float(students[i][0])/float(students[i][1])
-	print "name: " + i + '\t id: ' + str(students[i][2]) + '\t average: ' + str(average)
+	print "name: " + i + '\t average: ' + str(average)
 
 
 
